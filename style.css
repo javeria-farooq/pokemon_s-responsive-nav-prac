@@ -1,0 +1,136 @@
+#bar-container{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img{
+    width: 70px;
+    height: 30px;
+}
+
+#menu-bar {
+    font-size: 30px;
+    color: white;
+}
+
+#main-container{
+    display: flex;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body{
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+}
+
+.child{
+    display: flex;
+    justify-content: center;
+}
+
+.parent{
+    font-size: 18px;
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.parent:hover{
+    background-color: orange;
+}
+
+@media (min-width : 500px) {
+    #bar-container, #menu-bar, .menu {
+        display: none;
+    }
+}
+
+@media (max-width : 500px) {
+    #main-container, .parent, .child {
+       display: none;
+    }
+}
+
+@media (min-width : 770px) and (max-width : 935px) {
+    .parent {
+
+    font-size: 15px;
+    padding: 20px;
+
+    }
+}
+
+@media (min-width : 576px) and (max-width : 770px) {
+    .parent {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (min-width : 500px) and (max-width : 576px) {
+    .parent{
+        font-size: 13px;
+        padding: 3px;
+    }
+}
+
+#side-bar{
+    background-color: black;
+    width: 50px;
+    height: 530px;
+    position: fixed;
+    top: 90px;
+    z-index: -5;
+}
+
+#aside{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    top: 120px;
+    left: 50px;
+}
+
+.side-bars{
+    display: flex;
+    z-index: -5;
+}
+
+#user{
+    height: 120px;
+    background-color: greenyellow;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    height: 80px;
+    background-color: grey;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
