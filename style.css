@@ -28,6 +28,9 @@
     padding: 0px;
     justify-content: space-around;
     align-items: center;
+    margin-top: 70px;
+    position: sticky;
+    top: 0px;
 }
 
 body{
@@ -46,13 +49,14 @@ body{
     padding: 25px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
+
 
 .parent:hover{
     background-color: orange;
+}
+
+.nav-menu:hover{
+    text-decoration: underline;
 }
 
 @media (min-width : 500px) {
@@ -99,6 +103,17 @@ a{
     z-index: -5;
 }
 
+#border{
+    border-top: 0px solid white;
+    border-right: 50px solid black;
+    border-bottom: 50px solid black;
+    border-left: 50px solid black;
+    /* border: 0px 50px 50px 50px; */
+    /* border-color: black;
+    border-style: solid;
+    border-width: 50px; */
+}
+
 #aside{
     background-color: pink;
     display: flex;
@@ -107,8 +122,9 @@ a{
     width: 50px;
     height: 200px;
     position: fixed;
-    top: 120px;
+    top: 200px;
     left: 50px;
+    border-top-right-radius: 10px;
 }
 
 .side-bars{
@@ -118,7 +134,9 @@ a{
 
 #user{
     height: 120px;
-    background-color: greenyellow;
+    background-color: darkgreen;
+    border-top-right-radius: 10px;
+    color: white;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -134,3 +152,64 @@ a{
     align-items: center;
 }
 
+#content{
+    height: 530px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-left: 0px;
+    display: flex;
+    padding: 5px;
+    /* padding: 5px 5px 5px 80px; */
+    justify-content: center;
+}
+
+.footer{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+
+}
+
+#footer-img{
+    height: 100px;
+    width: 150px;
+}
+
+#social-link1, #social-link2, #social-link3, #social-link4, #social-link5 {
+    font-size: 30px;
+    display: inline-block;
+}
+
+#para{
+    font-size: 13px;
+}
+
+#footer1{
+    padding: 5px 5px 5px 200px;
+    width: 35%;
+    font-size: 14px;
+}
+
+#footer2{
+    padding: 0px 15px;
+    width: 35%;
+}
+
+#footer3{
+    padding: 0px 15px;
+    width: 30%;
+    font-size: 14px;
+}
+
+#h2{
+    font: 16px;
+}
+
+.nav-menu{
+    text-decoration: none;
+    color: black;
+}
